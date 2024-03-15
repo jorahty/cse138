@@ -30,7 +30,8 @@ main > a:not(:last-child) {
   border-bottom: 2px solid #7775;
 }
 
-main > a > h1,
+main > a > div > h1,
+main > a > div > h2,
 main > a > p {
   margin: 0;
 }
@@ -38,4 +39,12 @@ main > a > p {
 main > a > p {
   opacity: 0.7;
   font-size: large;
+  word-break: break-word;
+}
+
+main > a > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }

@@ -5,8 +5,10 @@ export default function Home() {
     <main>
       {lectures.map(({ emoji, number, description }) => (
         <a key={number} href={`Lecture-${number}.pdf`}>
-          <h1>{emoji}</h1>
-          <h1>{number}</h1>
+          <div>
+            <h1>{number}</h1>
+            <h2>{emoji}</h2>
+          </div>
           <p>{description}</p>
         </a>
       ))}
